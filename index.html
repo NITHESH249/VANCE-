@@ -13,32 +13,46 @@
       color: #ffffff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
+      overflow-x: hidden;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 80px 20px;
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 56px;
       color: #ffd700; /* Royal Gold */
       margin-bottom: 10px;
-      letter-spacing: 1.5px;
+      letter-spacing: 2px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700; }
+      100% { text-shadow: 0 0 30px #ffd700, 0 0 40px #ffd700; }
     }
 
     .tagline {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: bold;
-      color: #ffd700; /* Gold Tagline */
-      margin-bottom: 20px;
+      color: #ffd700;
+      margin-bottom: 25px;
+      animation: fadeIn 3s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
 
     p {
-      font-size: 18px;
+      font-size: 20px;
       color: #cccccc;
       margin-bottom: 40px;
+      line-height: 1.5;
     }
 
     a.button {
@@ -46,22 +60,28 @@
       background-color: #ffd700;
       color: #0b0b0b;
       text-decoration: none;
-      padding: 14px 28px;
-      border-radius: 10px;
+      padding: 18px 32px;
+      border-radius: 12px;
       font-weight: bold;
-      font-size: 16px;
-      margin: 15px 10px;
-      transition: background 0.3s ease;
+      font-size: 18px;
+      margin: 20px 10px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
     a.button:hover {
       background-color: #e6c200;
+      transform: scale(1.1);
     }
 
     footer {
-      margin-top: 60px;
-      font-size: 14px;
-      color: #555;
+      margin-top: 80px;
+      font-size: 16px;
+      color: #777;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -69,15 +89,15 @@
   <div class="container">
     <h1>VANCE</h1>
     <div class="tagline">Built Different. Wired to Win.</div>
-    <p>Daily Hustle. Premium Mindset. Motivation That Moves You.</p>
+    <p>Your daily source of high-energy motivation. Achieve greatness with purpose, hustle, and relentless drive. Join the Vance movement.</p>
     
     <a class="button" href="https://instagram.com/YOURUSERNAME" target="_blank">Follow on Instagram</a>
-    <a class="button" href="https://wa.me/YOURNUMBER" target="_blank">Join WhatsApp Group</a>
+    <a class="button" href="https://t.me/YOURTELEGRAMLINK" target="_blank">Join Telegram Group</a>
     <a class="button" href="https://yourlink.to/product" target="_blank">Buy Blueprint (₹299)</a>
   </div>
 
   <footer>
-    © 2025 Vance Motivation | Built for the Hustlers
+    © 2025 Vance Motivation | Built for the Hustlers | <a href="https://github.com/NITHESH249/VANCE-" target="_blank">GitHub Repository</a>
   </footer>
 </body>
 </html>
